@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-26T01:15:47.912Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="1aEZyL-xIakBDEPp_cDI" version="21.4.0" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-06-26T01:52:08.458Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="gRRSXMqj14HllyzfsL_w" version="21.4.0" type="github" pages="6">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
     <mxGraphModel dx="2074" dy="1156" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -978,19 +978,136 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="yuNUyXUPgcMS0TRFs-Ui-1" value="Object" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="140" y="80" width="110" height="50" as="geometry" />
+          <mxGeometry x="-40" y="80" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="yuNUyXUPgcMS0TRFs-Ui-2" value="AccessAnalyzerNode" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-80" y="430" width="160" height="86" as="geometry" />
+          <mxGeometry x="-470" y="430" width="450" height="294" as="geometry" />
         </mxCell>
-        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-3" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-2">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-3" value="+ OperationMap: unordered_map&amp;lt;Operation, T, ObjectPtrHash, ObjectPtrEqual&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-2">
+          <mxGeometry y="26" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-6" value="+ read_from: OperationMap&amp;lt;OperationMap&amp;lt;vector&amp;lt;vector&amp;lt;PrimExpr&amp;gt;&amp;gt;&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-2">
+          <mxGeometry y="52" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-7" value="+ read_by: OperationMap&amp;lt;OperationMap&amp;lt;vector&amp;lt;vector&amp;lt;PrimExpr&amp;gt;&amp;gt;&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-2">
+          <mxGeometry y="78" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-8" value="+ num_common_outer_iterators: OperationMap&amp;lt;OperationMap&amp;lt;int&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-2">
+          <mxGeometry y="104" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-9" value="+ is_simple_access: OperationMap&amp;lt;bool&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-2">
+          <mxGeometry y="130" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-10" value="+ is_strictly_inlineable: OperationMap&amp;lt;bool&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-2">
+          <mxGeometry y="156" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-11" value="+ needs_multi_level_tiling: OperationMap&amp;lt;bool&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-2">
+          <mxGeometry y="182" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-12" value="+ is_output: OperationMap&amp;lt;bool&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-2">
+          <mxGeometry y="208" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-13" value="+ ops_topo_order: Array&amp;lt;Operation&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-2">
+          <mxGeometry y="234" width="450" height="26" as="geometry" />
         </mxCell>
         <mxCell id="yuNUyXUPgcMS0TRFs-Ui-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-2">
-          <mxGeometry y="52" width="160" height="8" as="geometry" />
+          <mxGeometry y="260" width="450" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-5" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-2">
-          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-5" value="+&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-2">
+          <mxGeometry y="268" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-14" value="ObjectRef" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="80" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-15" value="AccessAnalyzer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="430" width="680" height="294" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-16" value="+&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-15">
+          <mxGeometry y="26" width="680" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-15">
+          <mxGeometry y="52" width="680" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-18" value="+ IsSimpleAccess(op: const Operation): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-15">
+          <mxGeometry y="60" width="680" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-19" value="+ IsStrictlyInlineable(op: const Operation): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-15">
+          <mxGeometry y="86" width="680" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-20" value="+ NeedsMultiLevelTiling(op: const Operation): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-15">
+          <mxGeometry y="112" width="680" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-21" value="+ IsOutput(op: const Operation): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-15">
+          <mxGeometry y="138" width="680" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-22" value="+ GetConsumers(state: const State&amp;amp;, op: const Operation&amp;amp;): unordered_set&amp;lt;Operation,&amp;nbsp; ObjectPtrHash, ObjectPtrEqual&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-15">
+          <mxGeometry y="164" width="680" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-23" value="+ GetProducers(state: const State&amp;amp;, op: const Operation&amp;amp;): unordered_set&amp;lt;Operation,&amp;nbsp; ObjectPtrHash, ObjectPtrEqual&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-15">
+          <mxGeometry y="190" width="680" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-24" value="+ GetDirectProducers(op: const Operation&amp;amp;): unordered_set&amp;lt;Operation,&amp;nbsp; ObjectPtrHash, ObjectPtrEqual&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-15">
+          <mxGeometry y="216" width="680" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-25" value="+ GetCommonOuterIterator(op: const Operation&amp;amp;, target_op: const Operation&amp;amp;): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-15">
+          <mxGeometry y="242" width="680" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-26" value="+ ElementWiseMatch(op: const Operation&amp;amp;, target_op: const Operation&amp;amp;): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-15">
+          <mxGeometry y="268" width="680" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-28" value="ComputeDAGNode" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="430" width="220" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-29" value="+ tensors: Array&amp;lt;Tensor&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-28">
+          <mxGeometry y="26" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-32" value="+ ops: Array&amp;lt;Operation&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-28">
+          <mxGeometry y="52" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-33" value="+ float_ct: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-28">
+          <mxGeometry y="78" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-34" value="+ init_state: State" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-28">
+          <mxGeometry y="104" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-35" value="+ access_analyzer: AccessAnalyzer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-28">
+          <mxGeometry y="130" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-28">
+          <mxGeometry y="156" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yuNUyXUPgcMS0TRFs-Ui-31" value="+ VisitAttrs(AttrVisitor* v)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yuNUyXUPgcMS0TRFs-Ui-28">
+          <mxGeometry y="164" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DPsMUG7ZWWYjQuYgrzZu-1" value="ComputeDAG" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1690" y="430" width="990" height="242" as="geometry" />
+        </mxCell>
+        <mxCell id="DPsMUG7ZWWYjQuYgrzZu-2" value="+&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DPsMUG7ZWWYjQuYgrzZu-1">
+          <mxGeometry y="26" width="990" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DPsMUG7ZWWYjQuYgrzZu-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DPsMUG7ZWWYjQuYgrzZu-1">
+          <mxGeometry y="52" width="990" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="DPsMUG7ZWWYjQuYgrzZu-4" value="+ RewriteLayout(transform_steps: Array&amp;lt;Step&amp;gt;*, layout_rewrite: LayoutRewriteOption): ComputeDAG" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DPsMUG7ZWWYjQuYgrzZu-1">
+          <mxGeometry y="60" width="990" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DPsMUG7ZWWYjQuYgrzZu-5" value="+ ApplySteps(transform_steps: const Array&amp;lt;Step&amp;gt;&amp;amp;, stages: Array&amp;lt;Stage&amp;gt;, stage_to_axes: StageToAxesMap, layout_rewrite: LayoutRewriteOption): pair&amp;lt;Schedule, Array&amp;lt;Tensor&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DPsMUG7ZWWYjQuYgrzZu-1">
+          <mxGeometry y="86" width="990" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DPsMUG7ZWWYjQuYgrzZu-6" value="+ PrintStepsAsPython(transform_steps: const Array&amp;lt;Step&amp;gt;&amp;amp;): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DPsMUG7ZWWYjQuYgrzZu-1">
+          <mxGeometry y="112" width="990" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DPsMUG7ZWWYjQuYgrzZu-7" value="+ PrintDAG(simple_mode: bool): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DPsMUG7ZWWYjQuYgrzZu-1">
+          <mxGeometry y="138" width="990" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DPsMUG7ZWWYjQuYgrzZu-8" value="+ InferBound(state: const State&amp;amp;): State" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DPsMUG7ZWWYjQuYgrzZu-1">
+          <mxGeometry y="164" width="990" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DPsMUG7ZWWYjQuYgrzZu-9" value="+ InferBound(states: const Array&amp;lt;State&amp;gt;&amp;amp;): Array&amp;lt;State&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DPsMUG7ZWWYjQuYgrzZu-1">
+          <mxGeometry y="190" width="990" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DPsMUG7ZWWYjQuYgrzZu-10" value="+ ReplayAndGetDAG(steps: const Array&amp;lt;Step&amp;gt;&amp;amp;): ComputeDAG" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DPsMUG7ZWWYjQuYgrzZu-1">
+          <mxGeometry y="216" width="990" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
