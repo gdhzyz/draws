@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-04T06:51:49.535Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="QvtjinXGHlWXw2eJ7EVV" version="21.4.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-07-05T01:18:11.791Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="qDCyOdmIzGQ4JQTmp1R3" version="21.4.0" type="github" pages="3">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
     <mxGraphModel dx="2074" dy="1156" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -695,6 +695,254 @@
         </mxCell>
         <mxCell id="hUzOxGKwvFmFdFp2XYk5-162" value="+&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="hUzOxGKwvFmFdFp2XYk5-159">
           <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="zZ0YPp95JLYbxH5rXZBf" name="schdule">
+    <mxGraphModel dx="2901" dy="1156" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="R-OQL-E5PcSQMEP540N5-1" value="Object" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-2" value="StageNode" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-420" y="500" width="240" height="554" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-3" value="+ op: Operation" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="26" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-4" value="+ original_op: Operation" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="52" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-5" value="+ all_iter_vars: Array&amp;lt;IterVar&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="78" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-6" value="+ leaf_iter_vars: Array&amp;lt;IterVar&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="104" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-7" value="+ env_threads: Array&amp;lt;IterVar&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="130" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-8" value="+ store_predicate: PrimExpr" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="156" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-9" value="+ relations: Array&amp;lt;IterVarRelation&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="182" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-10" value="+ iter_var_attrs: Map&amp;lt;IterVar, IterVarAttr&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="208" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-11" value="+ attach_type: AttachType" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="234" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-12" value="+ attach_ivar: IterVar" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="260" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-13" value="+ attach_stage: Stage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="286" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-14" value="+ scope: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="312" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-15" value="+ is_output: bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="338" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-16" value="+ double_buffer: bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="364" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-17" value="+ rolling_buffer: bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="390" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-18" value="+ layout_transforms: Array&amp;lt;IndexMap&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="416" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-19" value="+ axis_seperator: Array&amp;lt;IntIMM&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="442" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-20" value="+ group: Stage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="468" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-21" value="+ num_child_stages: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="494" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="520" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-23" value="+ VisitAttrs(AttrVisitor* v)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-2">
+          <mxGeometry y="528" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-24" value="ObjectRef" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="160" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-25" value="Stage" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="500" width="910" height="736" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-26" value="+&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="26" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="52" width="910" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-28" value="+ set_scope(scope: string): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="60" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-29" value="+ compute_at(parent: Stage, scope: IterVar): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="86" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-30" value="+ compute_inline(): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="112" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-31" value="+ compute_root(): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="138" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-32" value="+ bind(ivar: IterVar, thread_ivar: IterVar): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="164" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-33" value="+ set_store_predicate(predicate: PrimExpr): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="190" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-34" value="+ env_threads(threads: Array&amp;lt;IterVar&amp;gt;): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="216" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-35" value="+ split(parent: IterVar, factor: PrimExpr, p_outer: IterVar*, p_inner: IterVar*): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="242" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-36" value="+ split_by_nparts(parent: IterVar, nparts: PrimExpr, p_outer: IterVar*, p_inner: IterVar*): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="268" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-37" value="+ fuse(outer: IterVar, inner: IterVar, p_target: IterVar*): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="294" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-38" value="+ fuse(axes: const Array&amp;lt;IterVar&amp;gt;&amp;amp;, p_target: IterVar*): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="320" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-39" value="+ reorder(order: const Array&amp;lt;IterVar&amp;gt;&amp;amp;): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="346" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-40" value="+ tile(x_parent: IterVar, y_parent: IterVar, x_factor: PrimExpr, y_factor: PrimExpr, p_x_outer: IterVar*, p_y_outer: IterVar*, p_x_inner: IterVar*, p_y_inner: IterVar*): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="372" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-41" value="+ vectorize(var: IterVar): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="398" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-42" value="+ tensorize(var: IterVar, f: TersorIntrin): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="424" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-43" value="+ unroll(var: IterVar): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="450" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-44" value="+ parallelize(var: IterVar): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="476" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-45" value="+ pragma(var: IterVar, pragma_type: const string, pragma_value: const PrimExpr&amp;amp;): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="502" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-46" value="+ prefetch(domain: const Tensor&amp;amp;, var: IterVar, offset: PrimExpr): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="528" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-47" value="+ storage_align(axis: IterVar, factor: int, offset: int): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="554" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-48" value="+ double_buffer(): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="580" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-49" value="+ rolling_buffer(): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="606" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-50" value="+ tramsform_layout(initial_indices: const Array&amp;lt;Var&amp;gt;, final_indices: const Array&amp;lt;PrimExpr&amp;gt;, out_iter_vars: Array&amp;lt;IterVar*&amp;gt;*): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="632" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-51" value="+ set_axis_seperators(axis_seperator: const Array&amp;lt;IntIMM&amp;gt;): Stage&amp;amp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="658" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-52" value="+ is_scheduled(): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="684" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-53" value="+ GetAttachSpec(): Stage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-25">
+          <mxGeometry y="710" width="910" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-54" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="R-OQL-E5PcSQMEP540N5-2" target="R-OQL-E5PcSQMEP540N5-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-300" y="300" as="sourcePoint" />
+            <mxPoint x="-140" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-55" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="R-OQL-E5PcSQMEP540N5-25" target="R-OQL-E5PcSQMEP540N5-24">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="490" y="400" as="sourcePoint" />
+            <mxPoint x="650" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-56" value="ScheduleNode" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="500" width="340" height="294" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-57" value="+ outputs: Array&amp;lt;Operation&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-56">
+          <mxGeometry y="26" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-58" value="+ stages: Array&amp;lt;Stage&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-56">
+          <mxGeometry y="52" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-59" value="+ groups: Array&amp;lt;Stage&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-56">
+          <mxGeometry y="78" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-60" value="+ stage_map: Map&amp;lt;Operation, Stage&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-56">
+          <mxGeometry y="104" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-61" value="+ op2stage_cache_: unordered_map&amp;lt;const Object*, Stage&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-56">
+          <mxGeometry y="130" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-62" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-56">
+          <mxGeometry y="156" width="340" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-63" value="+ VisitAttrs(AttrVisitor* v)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-56">
+          <mxGeometry y="164" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-64" value="+ InitCache()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-56">
+          <mxGeometry y="190" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-65" value="+ InvalidateCache()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-56">
+          <mxGeometry y="216" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-66" value="+ Contain(op: const Operation&amp;amp;): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-56">
+          <mxGeometry y="242" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-67" value="+ Contain(tensor: const Tensor&amp;amp;): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-56">
+          <mxGeometry y="268" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-68" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="R-OQL-E5PcSQMEP540N5-56">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="200" y="1130" as="sourcePoint" />
+            <mxPoint x="170" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-69" value="Schedule" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1970" y="500" width="630" height="216" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-70" value="+&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-69">
+          <mxGeometry y="26" width="630" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-71" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-69">
+          <mxGeometry y="52" width="630" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-72" value="+ copy(): Schedule" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-69">
+          <mxGeometry y="60" width="630" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-73" value="+ create_group(outputs: const Array&amp;lt;Tensor&amp;gt;&amp;amp;, inputs: const Array&amp;lt;Tensor&amp;gt;&amp;amp;, include_inputs: bool): Stage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-69">
+          <mxGeometry y="86" width="630" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-74" value="+ copy(): Schedule" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-69">
+          <mxGeometry y="112" width="630" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-75" value="+ copy(): Schedule" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-69">
+          <mxGeometry y="138" width="630" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-76" value="+ copy(): Schedule" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-69">
+          <mxGeometry y="164" width="630" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R-OQL-E5PcSQMEP540N5-77" value="+ copy(): Schedule" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="R-OQL-E5PcSQMEP540N5-69">
+          <mxGeometry y="190" width="630" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
