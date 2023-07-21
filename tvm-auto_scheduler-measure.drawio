@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-21T01:47:40.739Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="92EYihgUdJCOmDz_ZAY7" version="21.6.3" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2023-07-21T01:52:21.713Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="ahzKoOD3MDt_t4EG101D" version="21.6.3" type="github" pages="8">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
     <mxGraphModel dx="2074" dy="1156" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -2281,7 +2281,7 @@
           <mxGeometry y="164" width="480" height="26" as="geometry" />
         </mxCell>
         <mxCell id="5OjevH-joF6tG9Uug39i-152" value="State" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="7590" y="480" width="750" height="450" as="geometry" />
+          <mxGeometry x="7590" y="480" width="750" height="528" as="geometry" />
         </mxCell>
         <mxCell id="5OjevH-joF6tG9Uug39i-153" value="+&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="5OjevH-joF6tG9Uug39i-152">
           <mxGeometry y="26" width="750" height="26" as="geometry" />
@@ -2333,6 +2333,15 @@
         </mxCell>
         <mxCell id="5OjevH-joF6tG9Uug39i-171" value="+ compute_root(stage_id: int)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="5OjevH-joF6tG9Uug39i-152">
           <mxGeometry y="424" width="750" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5OjevH-joF6tG9Uug39i-172" value="+ cache_read(stage_id: int, scope_name: const String&amp;amp;, reader_stage_ids: const Array&amp;lt;Integer&amp;gt;&amp;amp;, dag: const ComputeDAG&amp;amp;): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="5OjevH-joF6tG9Uug39i-152">
+          <mxGeometry y="450" width="750" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5OjevH-joF6tG9Uug39i-173" value="+ cache_write(stage_id: int, scope_name: const String&amp;amp;, dag: const ComputeDAG&amp;amp;): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="5OjevH-joF6tG9Uug39i-152">
+          <mxGeometry y="476" width="750" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5OjevH-joF6tG9Uug39i-174" value="+ rfactor(stage_id: int, it: const Iterator&amp;amp;, factor_iter_id: int, dag: const ComputeDAG&amp;amp;): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="5OjevH-joF6tG9Uug39i-152">
+          <mxGeometry y="502" width="750" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
