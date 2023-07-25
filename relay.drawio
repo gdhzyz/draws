@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-25T08:42:21.572Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="SW-yFfHVUwdUAWPyGzr1" version="21.6.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2023-07-25T08:44:44.079Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="oCVsYa21Qzhdew1O4iJB" version="21.6.3" type="github" pages="5">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
     <mxGraphModel dx="2074" dy="1156" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -1152,10 +1152,10 @@
         <mxCell id="lvMfWw7p78cX8dDhDPGj-14" value="&lt;u&gt;+ Create(name: String, attrs: Map&amp;lt;String, ObjectRef&amp;gt; = {}): Executor&lt;/u&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lvMfWw7p78cX8dDhDPGj-10">
           <mxGeometry y="86" width="690" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="lvMfWw7p78cX8dDhDPGj-15" value="+ GetAttr(attr_key: const string&amp;amp;, default_value: Optional&amp;lt;TObjectRef&amp;gt; = Optional&amp;lt;TObjectRef&amp;gt;(nullptr)): Optional&amp;lt;TObjectRef&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lvMfWw7p78cX8dDhDPGj-10">
+        <mxCell id="lvMfWw7p78cX8dDhDPGj-15" value="&lt;u&gt;+ ListExecutors(): Array&amp;lt;String&amp;gt;&lt;/u&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lvMfWw7p78cX8dDhDPGj-10">
           <mxGeometry y="112" width="690" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="lvMfWw7p78cX8dDhDPGj-16" value="+ GetAttr(attr_key: const string&amp;amp;, default_value:Optional&amp;lt;TObjectRef&amp;gt;): Optional&amp;lt;TObjectRef&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lvMfWw7p78cX8dDhDPGj-10">
+        <mxCell id="lvMfWw7p78cX8dDhDPGj-16" value="&lt;u&gt;+ ListExecutorOptions(name: const String&amp;amp;): Map&amp;lt;String, String&amp;gt;&lt;/u&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lvMfWw7p78cX8dDhDPGj-10">
           <mxGeometry y="138" width="690" height="26" as="geometry" />
         </mxCell>
       </root>
