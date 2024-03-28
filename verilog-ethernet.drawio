@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-28T10:26:04.005Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="cPI8ewyAXI2q0F-WcYgh" version="24.2.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-03-28T10:30:11.234Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="hBqHTOqIRLUvlDG9izIU" version="24.2.0" type="github" pages="4">
   <diagram name="Page-1" id="90a13364-a465-7bf4-72fc-28e22215d7a0">
     <mxGraphModel dx="1426" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
@@ -671,7 +671,7 @@
             <mxPoint x="147.92" y="449" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="THh-cyFSBiC59sENkMlL-13" value="tx_fifo" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="THh-cyFSBiC59sENkMlL-13" value="tx_fifo:&lt;div&gt;axis_async_fifo_adapter&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-200" y="380" width="160" height="140" as="geometry" />
         </mxCell>
         <mxCell id="THh-cyFSBiC59sENkMlL-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.025;entryY=0.295;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
@@ -683,7 +683,7 @@
         <mxCell id="THh-cyFSBiC59sENkMlL-15" value="tx_axis_tvalid" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-330" y="420" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="THh-cyFSBiC59sENkMlL-16" value="rx_fifo" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="THh-cyFSBiC59sENkMlL-16" value="rx_fifo:&lt;div&gt;axis_async_fifo_adapter&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="496" y="380" width="160" height="140" as="geometry" />
         </mxCell>
         <mxCell id="THh-cyFSBiC59sENkMlL-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.025;entryY=0.295;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
