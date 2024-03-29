@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-28T10:30:11.234Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="hBqHTOqIRLUvlDG9izIU" version="24.2.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-03-29T01:34:04.280Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="rR1j3hE46J1ec6jOdJ_n" version="24.2.0" type="github" pages="5">
   <diagram name="Page-1" id="90a13364-a465-7bf4-72fc-28e22215d7a0">
     <mxGraphModel dx="1426" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
@@ -702,6 +702,59 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="660" y="449.5" as="sourcePoint" />
             <mxPoint x="846" y="449.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="rG-CFRZbl4ewhqlBNQ0V" name="axis_async_fifo_adapter">
+    <mxGraphModel dx="2253" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d9o1RzHUuspp59akcgYM-1" value="fifo_inst:&amp;nbsp;axis_async_fifo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="220" width="160" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="d9o1RzHUuspp59akcgYM-10" value="pre_fifo_axis_tvalid" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1.92" y="341" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d9o1RzHUuspp59akcgYM-11" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.025;entryY=0.295;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-38.08" y="370" as="sourcePoint" />
+            <mxPoint x="147.92" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d9o1RzHUuspp59akcgYM-12" value="adapter_inst&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;if (M_BYTE_LANES &amp;gt; S_BYTE_LANES)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="301" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="d9o1RzHUuspp59akcgYM-13" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.025;entryY=0.295;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-386" y="370.5" as="sourcePoint" />
+            <mxPoint x="-200.00000000000003" y="370.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d9o1RzHUuspp59akcgYM-14" value="s_axis_tvalid" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-330" y="341" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4GXOnElR-G3GsyzCSki-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.025;entryY=0.295;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="379" as="sourcePoint" />
+            <mxPoint x="496" y="379" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q4GXOnElR-G3GsyzCSki-2" value="post_fifo_axis_tvalid" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="350" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4GXOnElR-G3GsyzCSki-3" value="adapter_inst&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;if (M_BYTE_LANES &amp;lt; S_BYTE_LANES)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="301" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4GXOnElR-G3GsyzCSki-4" value="m_axis_tvalid" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="350" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q4GXOnElR-G3GsyzCSki-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.025;entryY=0.295;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="379" as="sourcePoint" />
+            <mxPoint x="846" y="379" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
