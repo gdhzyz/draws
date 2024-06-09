@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-09T05:02:21.252Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="D5YVfoxnosymj4iBoQn4" version="24.5.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-06-09T05:06:28.406Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="KMpiazvLbniEPbGHyliA" version="24.5.2" type="github" pages="2">
   <diagram name="总体数据流" id="dPYuxXUu1VKVWB7A-5tS">
     <mxGraphModel dx="1815" dy="549" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -123,7 +123,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ikEZd7PxcQ30-SQm-mlz-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="ikEZd7PxcQ30-SQm-mlz-1" value="FPGA" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="230" width="260" height="430" as="geometry" />
         </mxCell>
         <mxCell id="lzPeMIXOxYJRqX7lf4L4-1" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;I2S一路数据有left和right两个通道，这里的单向250通道就是125路I2S数据。&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;125路的情况可以用TDM16，需要的I2S物理路数为ceil(125/16)=8。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;双向带宽：2*250*48000*24=576Mbps。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;最大采样率48KHz，TDM16模式下，单通道24bits，bclk频率为24*48000*16*2=36.9MHz。&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;imageAspect=1;imageAlign=left;" parent="1" vertex="1">
@@ -131,6 +131,42 @@
         </mxCell>
         <mxCell id="3Dt8LHgarA3Sg44R5uZ9-1" value="&lt;font style=&quot;font-size: 36px;&quot; color=&quot;#ff3333&quot;&gt;TODO，带宽计算采用TDM16模式下负载250通道，48KHz采样频率，是否合适？&lt;/font&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-920" y="180" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Dt8LHgarA3Sg44R5uZ9-2" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.006;entryY=0.511;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-278.44" y="400" as="sourcePoint" />
+            <mxPoint x="50.00000000000006" y="399.73" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Dt8LHgarA3Sg44R5uZ9-3" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;I2S * 8(TDM2/TDM4/TDM8/TDM16)&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;imageAspect=1;imageAlign=left;" vertex="1" parent="1">
+          <mxGeometry x="-298.44" y="340" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3Dt8LHgarA3Sg44R5uZ9-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.006;entryY=0.511;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="49.56" y="500" as="sourcePoint" />
+            <mxPoint x="-278.44" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Dt8LHgarA3Sg44R5uZ9-5" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;I2S * 8(TDM2/TDM4/TDM8/TDM16)&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;imageAspect=1;imageAlign=left;" vertex="1" parent="1">
+          <mxGeometry x="-298.44" y="440" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3Dt8LHgarA3Sg44R5uZ9-6" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.006;entryY=0.511;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310.00000000000006" y="440.27" as="sourcePoint" />
+            <mxPoint x="638.44" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Dt8LHgarA3Sg44R5uZ9-7" value="RGMII(Ethernet, MAC)" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;imageAspect=1;imageAlign=left;" vertex="1" parent="1">
+          <mxGeometry x="410" y="400" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3Dt8LHgarA3Sg44R5uZ9-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.006;entryY=0.511;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-278.44" y="600" as="sourcePoint" />
+            <mxPoint x="49.56" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Dt8LHgarA3Sg44R5uZ9-9" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;SPI&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;imageAspect=1;imageAlign=left;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="550" width="111.56" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
