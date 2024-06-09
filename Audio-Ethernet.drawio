@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-09T05:14:30.581Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="XqgDc0OllZ3xmY04hOSs" version="24.5.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-06-09T05:18:52.399Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="IEP12PLPWO6EiFbWxwSq" version="24.5.2" type="github" pages="2">
   <diagram name="总体数据流" id="dPYuxXUu1VKVWB7A-5tS">
     <mxGraphModel dx="1815" dy="549" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -119,7 +119,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Eixk4ZSZosUX-W5lpeiQ" name="FPGA方案">
-    <mxGraphModel dx="3726" dy="1153" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3726" dy="2253" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -129,7 +129,7 @@
         <mxCell id="lzPeMIXOxYJRqX7lf4L4-1" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;I2S一路数据有left和right两个通道，这里的单向250通道就是125路I2S数据。&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;125路的情况可以用TDM16，需要的I2S物理路数为ceil(125/16)=8。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;双向带宽：2*250*48000*24=576Mbps。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;最大采样率48KHz，TDM16模式下，单通道24bits，bclk频率为24*48000*16*2=36.9MHz。&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;imageAspect=1;imageAlign=left;" parent="1" vertex="1">
           <mxGeometry x="-40" width="640" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="3Dt8LHgarA3Sg44R5uZ9-1" value="&lt;font style=&quot;font-size: 36px;&quot; color=&quot;#ff3333&quot;&gt;TODO，带宽计算采用TDM16模式下负载250通道，48KHz采样频率，是否合适？&lt;/font&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="3Dt8LHgarA3Sg44R5uZ9-1" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 36px;&quot; color=&quot;#ff3333&quot;&gt;TODO，带宽计算采用TDM16模式下负载250通道，48KHz采样频率，是否合适？&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 36px;&quot; color=&quot;#ff3333&quot;&gt;I2S slave模式下，bclk是否会中断？&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 36px;&quot; color=&quot;#ff3333&quot;&gt;I2S master模式下，bclk是否需要中断？&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-900" y="65" width="680" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3Dt8LHgarA3Sg44R5uZ9-2" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.006;entryY=0.511;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1">
