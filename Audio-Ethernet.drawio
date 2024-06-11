@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-11T09:01:56.655Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="aSOO1FbIqdseTAFQhEZn" version="24.4.14" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-06-11T09:19:40.996Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="qXaFFz0xz1Z81aehUdG0" version="24.4.14" type="github" pages="4">
   <diagram name="总体数据流" id="dPYuxXUu1VKVWB7A-5tS">
     <mxGraphModel dx="1815" dy="549" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -156,8 +156,8 @@
             <mxPoint x="-172" y="600" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3Dt8LHgarA3Sg44R5uZ9-9" value="&lt;span style=&quot;font-size: 18px; background-color: initial;&quot;&gt;SPI / I2C&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;imageAspect=1;imageAlign=left;" parent="1" vertex="1">
-          <mxGeometry x="-330" y="550" width="111.56" height="40" as="geometry" />
+        <mxCell id="3Dt8LHgarA3Sg44R5uZ9-9" value="&lt;span style=&quot;font-size: 18px; background-color: initial;&quot;&gt;UART&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;imageAspect=1;imageAlign=left;" parent="1" vertex="1">
+          <mxGeometry x="-330" y="550" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="3Dt8LHgarA3Sg44R5uZ9-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.006;entryY=0.511;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
