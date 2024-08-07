@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-30T01:33:53.118Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="Lpw73W173G2jLYL9WcI7" version="24.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-08-07T06:37:34.296Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="EArciCutXv73I1RWswPw" version="24.6.4" type="github">
   <diagram name="第 1 页" id="c5W6eQkA04ybcLQiyayG">
-    <mxGraphModel dx="910" dy="461" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1306" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -22,7 +22,7 @@
         <mxCell id="iuTIGsEMbM-72Q9mmgjD-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iuTIGsEMbM-72Q9mmgjD-3" target="iuTIGsEMbM-72Q9mmgjD-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="iuTIGsEMbM-72Q9mmgjD-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iuTIGsEMbM-72Q9mmgjD-3" target="iuTIGsEMbM-72Q9mmgjD-2">
+        <mxCell id="iuTIGsEMbM-72Q9mmgjD-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="iuTIGsEMbM-72Q9mmgjD-3" target="iuTIGsEMbM-72Q9mmgjD-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="iuTIGsEMbM-72Q9mmgjD-3" value="DMA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -76,6 +76,12 @@
             <mxPoint x="300" y="320.4" as="sourcePoint" />
             <mxPoint x="221" y="320.4" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="iuTIGsEMbM-72Q9mmgjD-24" value="ReLU" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="200" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iuTIGsEMbM-72Q9mmgjD-25" value="Global Pool" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="200" width="70" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
