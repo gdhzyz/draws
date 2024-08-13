@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-04T16:15:03.907Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="OGwmgSmeSbU2vsapnlNU" version="24.6.4" type="github" pages="15">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" version="24.7.6" pages="15">
   <diagram name="总体数据流" id="dPYuxXUu1VKVWB7A-5tS">
     <mxGraphModel dx="1815" dy="549" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -313,7 +313,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CzpRKCBiq-TJ8XexM97j" name="带宽延时计算">
-    <mxGraphModel dx="2893" dy="1153" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2600" dy="1153" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -362,7 +362,7 @@
         <mxCell id="rqa0CD5F-TvEFyZIPpTd-20" value="" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=auto;dashed=1;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-500" y="255" width="350" height="125" as="geometry" />
         </mxCell>
-        <mxCell id="HEBAw8BuionwLTanQ0NY-1" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;单向带宽计算。在满载bclk=24.576MHz、192KHz的情况下，24.576*1000/192=128，即此时每一次采样数据量为128b，假设I2S为32bits，那么TDM为4，此时为系统峰值带宽。假设每个MAC数据包的payload只包含一路I2S的128b=16Bytes数据，自定义header为4Bytes，Ethernet header数据量为38Bytes，单帧为4+16+38=58Bytes一路I2S的带宽需求为58*192*1000=11136000bps=11.136Mbps，16路I2S的总带宽需求为11.136Mbps*16=178.176Mbps，所以每采样一次I2S单独发送能满足带宽需求。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;延时计算。由上述带宽计算，每个TDM4单独发送，那么单个TDM4在发送端FPGA内的延时为接口采集延时Trecv+内部处理延时Tlogic+RGMII发送延时Tsend。采用8KHz采样频率，Trecv=1/48000s=0.21ms；内部处理假设消耗1000个时钟周期，跑100MHz，每个周期延时为10ns，那么Tlogic=1000*10/1000/1000=0.01ms；16路I2S buffer轮询发送，发送延时Tsend=16*58*8/1000/1000/1000*1000=0.007424ms，取Tsend=0.01ms；发送端FPGA的总延时为Tsend_fpga=Trecv+Tlogic+Tsend=0.23ms。接收端FPGA内时间和发送端FPGA内延时差不多，所以发送端和接收端FPGA总延时Tfpga=0.23s*2=0.46ms。采用工业级交换机，延时在微秒级，假设为100us=0.1ms。单片YT8511延时假设为0.1ms，那么总延时为0.46+0.1+0.1*2=0.76ms，延时在2ms以内。&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;imageAspect=1;imageAlign=left;" parent="1" vertex="1">
+        <mxCell id="HEBAw8BuionwLTanQ0NY-1" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;单向带宽计算。在满载bclk=24.576MHz、192KHz的情况下，24.576*1000/192=128，即此时每一次采样数据量为128b，假设I2S为32bits，那么TDM为4，此时为系统峰值带宽。假设每个MAC数据包的payload只包含一路I2S的128b=16Bytes数据，自定义header为4Bytes，Ethernet header数据量为38Bytes，单帧为4+16+38=58Bytes一路I2S的带宽需求为58*192*1000=11136000Bps=11.136MBps=89.088Mbps，16路I2S的总带宽需求为89.088Mbps*16=1425.408Mbps，所以每采样一次I2S单独发送超出网口带宽。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;延时计算。由上述带宽计算，每个TDM4单独发送，那么单个TDM4在发送端FPGA内的延时为接口采集延时Trecv+内部处理延时Tlogic+RGMII发送延时Tsend。采用8KHz采样频率，Trecv=1/48000s=0.21ms；内部处理假设消耗1000个时钟周期，跑100MHz，每个周期延时为10ns，那么Tlogic=1000*10/1000/1000=0.01ms；16路I2S buffer轮询发送，发送延时Tsend=16*58*8/1000/1000/1000*1000=0.007424ms，取Tsend=0.01ms；发送端FPGA的总延时为Tsend_fpga=Trecv+Tlogic+Tsend=0.23ms。接收端FPGA内时间和发送端FPGA内延时差不多，所以发送端和接收端FPGA总延时Tfpga=0.23s*2=0.46ms。采用工业级交换机，延时在微秒级，假设为100us=0.1ms。单片YT8511延时假设为0.1ms，那么总延时为0.46+0.1+0.1*2=0.76ms，延时在2ms以内。&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;imageAspect=1;imageAlign=left;" parent="1" vertex="1">
           <mxGeometry x="-790" y="480" width="640" height="600" as="geometry" />
         </mxCell>
       </root>
